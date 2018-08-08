@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		587D8E852105E8A100C08F32 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 587D8E842105E8A100C08F32 /* libc++.tbd */; };
-		587D8E872105E8B400C08F32 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 587D8E862105E8B400C08F32 /* VideoToolbox.framework */; };
-		587D8E892105E8BD00C08F32 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 587D8E882105E8BD00C08F32 /* GLKit.framework */; };
-		5899B8252106E046006F3B23 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5899B8232106E046006F3B23 /* SocketIO.framework */; };
-		5899B8262106E046006F3B23 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5899B8242106E046006F3B23 /* Starscream.framework */; };
-		5899BAC92106FF9E006F3B23 /* SocketIO.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5899B8232106E046006F3B23 /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5899BACA2106FF9E006F3B23 /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5899B8242106E046006F3B23 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5899BB2421070F70006F3B23 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5899BB2321070F70006F3B23 /* VideoToolbox.framework */; };
+		5899BB2621070F77006F3B23 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5899BB2521070F77006F3B23 /* GLKit.framework */; };
+		5899BB2821070F7E006F3B23 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5899BB2721070F7E006F3B23 /* libc++.tbd */; };
 		58A0756020EF86C300658C1C /* VideosBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A0755F20EF86C300658C1C /* VideosBlock.m */; };
 		58C9D52E20FC8A64000376C1 /* TKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C9D52C20FC8A64000376C1 /* TKTableViewCell.m */; };
 		58C9D52F20FC8A64000376C1 /* TKTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C9D52D20FC8A64000376C1 /* TKTableViewCell.xib */; };
-		58EE17872110029B0090C1A8 /* libTKRoomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EE17862110029B0090C1A8 /* libTKRoomSDK.framework */; };
+		58FDDF9C211AAA1D003455D9 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FDDF9A211AAA1C003455D9 /* Starscream.framework */; };
+		58FDDF9D211AAA1D003455D9 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FDDF9B211AAA1C003455D9 /* SocketIO.framework */; };
+		58FDDF9E211AAA25003455D9 /* SocketIO.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 58FDDF9B211AAA1C003455D9 /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58FDDF9F211AAA25003455D9 /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 58FDDF9A211AAA1C003455D9 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E2C93431F023D26005D4300 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C93421F023D26005D4300 /* main.m */; };
 		5E2C93461F023D26005D4300 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C93451F023D26005D4300 /* AppDelegate.m */; };
 		5E2C93491F023D26005D4300 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C93481F023D26005D4300 /* ViewController.m */; };
 		5E2C934C1F023D26005D4300 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2C934A1F023D26005D4300 /* Main.storyboard */; };
 		5E2C93511F023D26005D4300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2C934F1F023D26005D4300 /* LaunchScreen.storyboard */; };
 		5E2C93761F023D5F005D4300 /* RoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C93751F023D5F005D4300 /* RoomController.m */; };
+		5E6F328C211AD2A5009691EB /* libTKRoomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6F328B211AD2A5009691EB /* libTKRoomSDK.framework */; };
 		683B1AA8207D1549008E2BEB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 683B1AAA207D1549008E2BEB /* Localizable.strings */; };
 		685826DE207E085100734E43 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 685826DC207E085100734E43 /* VideoView.m */; };
 		685826E1207E087D00734E43 /* TKVideoLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 685826E0207E087D00734E43 /* TKVideoLayerView.m */; };
@@ -73,8 +73,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5899BAC92106FF9E006F3B23 /* SocketIO.framework in CopyFiles */,
-				5899BACA2106FF9E006F3B23 /* Starscream.framework in CopyFiles */,
+				58FDDF9E211AAA25003455D9 /* SocketIO.framework in CopyFiles */,
+				58FDDF9F211AAA25003455D9 /* Starscream.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,17 +82,16 @@
 
 /* Begin PBXFileReference section */
 		587D8C812101DF8700C08F32 /* talkSDKDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = talkSDKDemo.entitlements; sourceTree = "<group>"; };
-		587D8E842105E8A100C08F32 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		587D8E862105E8B400C08F32 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
-		587D8E882105E8BD00C08F32 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		5899B8232106E046006F3B23 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SocketIO.framework; sourceTree = "<group>"; };
-		5899B8242106E046006F3B23 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Starscream.framework; sourceTree = "<group>"; };
+		5899BB2321070F70006F3B23 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		5899BB2521070F77006F3B23 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		5899BB2721070F7E006F3B23 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		58A0755E20EF86C300658C1C /* VideosBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideosBlock.h; sourceTree = "<group>"; };
 		58A0755F20EF86C300658C1C /* VideosBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideosBlock.m; sourceTree = "<group>"; };
 		58C9D52B20FC8A64000376C1 /* TKTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTableViewCell.h; sourceTree = "<group>"; };
 		58C9D52C20FC8A64000376C1 /* TKTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTableViewCell.m; sourceTree = "<group>"; };
 		58C9D52D20FC8A64000376C1 /* TKTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKTableViewCell.xib; sourceTree = "<group>"; };
-		58EE17862110029B0090C1A8 /* libTKRoomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libTKRoomSDK.framework; sourceTree = "<group>"; };
+		58FDDF9A211AAA1C003455D9 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Starscream.framework; sourceTree = "<group>"; };
+		58FDDF9B211AAA1C003455D9 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SocketIO.framework; sourceTree = "<group>"; };
 		5E2C933E1F023D26005D4300 /* talkSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = talkSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2C93421F023D26005D4300 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E2C93441F023D26005D4300 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,6 +107,7 @@
 		5E2C93751F023D5F005D4300 /* RoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomController.m; sourceTree = "<group>"; };
 		5E2C93801F023E45005D4300 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		5E2C93821F023E4E005D4300 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		5E6F328B211AD2A5009691EB /* libTKRoomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libTKRoomSDK.framework; sourceTree = "<group>"; };
 		683B1AA0207D1264008E2BEB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		683B1AA1207D1264008E2BEB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		683B1AA3207D1269008E2BEB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -172,12 +172,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				587D8E892105E8BD00C08F32 /* GLKit.framework in Frameworks */,
-				587D8E872105E8B400C08F32 /* VideoToolbox.framework in Frameworks */,
-				587D8E852105E8A100C08F32 /* libc++.tbd in Frameworks */,
-				58EE17872110029B0090C1A8 /* libTKRoomSDK.framework in Frameworks */,
-				5899B8262106E046006F3B23 /* Starscream.framework in Frameworks */,
-				5899B8252106E046006F3B23 /* SocketIO.framework in Frameworks */,
+				5899BB2821070F7E006F3B23 /* libc++.tbd in Frameworks */,
+				5899BB2621070F77006F3B23 /* GLKit.framework in Frameworks */,
+				58FDDF9D211AAA1D003455D9 /* SocketIO.framework in Frameworks */,
+				5E6F328C211AD2A5009691EB /* libTKRoomSDK.framework in Frameworks */,
+				58FDDF9C211AAA1D003455D9 /* Starscream.framework in Frameworks */,
+				5899BB2421070F70006F3B23 /* VideoToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,12 +198,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5899B8222106E046006F3B23 /* lib */ = {
+		587D8BFD21008D0E00C08F32 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				58EE17862110029B0090C1A8 /* libTKRoomSDK.framework */,
-				5899B8232106E046006F3B23 /* SocketIO.framework */,
-				5899B8242106E046006F3B23 /* Starscream.framework */,
+				5E6F328B211AD2A5009691EB /* libTKRoomSDK.framework */,
+				58FDDF9B211AAA1C003455D9 /* SocketIO.framework */,
+				58FDDF9A211AAA1C003455D9 /* Starscream.framework */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				587D8C812101DF8700C08F32 /* talkSDKDemo.entitlements */,
-				5899B8222106E046006F3B23 /* lib */,
+				587D8BFD21008D0E00C08F32 /* lib */,
 				8469F8CF20FCA1DE00E231D2 /* Vendor */,
 				685826DB207E083600734E43 /* Views */,
 				5E2C93741F023D5F005D4300 /* RoomController.h */,
@@ -262,9 +262,9 @@
 		5E2C937F1F023E45005D4300 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				587D8E882105E8BD00C08F32 /* GLKit.framework */,
-				587D8E862105E8B400C08F32 /* VideoToolbox.framework */,
-				587D8E842105E8A100C08F32 /* libc++.tbd */,
+				5899BB2721070F7E006F3B23 /* libc++.tbd */,
+				5899BB2521070F77006F3B23 /* GLKit.framework */,
+				5899BB2321070F70006F3B23 /* VideoToolbox.framework */,
 				5E2C93821F023E4E005D4300 /* libicucore.tbd */,
 				5E2C93801F023E45005D4300 /* CoreMedia.framework */,
 			);
@@ -712,19 +712,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8VXJWE28Q2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/talkSDKDemo",
 					"$(PROJECT_DIR)/talkSDKDemo/lib",
-					"$(PROJECT_DIR)/talkSDKDemo/lib/libTKRoomSDK.framework",
+					"$(PROJECT_DIR)/talkSDKDemo/lib/socketio_zhm",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/talkSDKDemo/PrefixHeader.pch";
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/talkSDKDemo/lib/libTKRoomSDK.framework";
 				INFOPLIST_FILE = talkSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -734,12 +734,11 @@
 					"$(PROJECT_DIR)/talkSDKDemo/lib",
 				);
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_BUNDLE_IDENTIFIER = ifeng.talkSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.talkcloud.edu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/talkSDKDemo/lib";
 			};
 			name = Debug;
 		};
@@ -748,19 +747,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8VXJWE28Q2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/talkSDKDemo",
 					"$(PROJECT_DIR)/talkSDKDemo/lib",
-					"$(PROJECT_DIR)/talkSDKDemo/lib/libTKRoomSDK.framework",
+					"$(PROJECT_DIR)/talkSDKDemo/lib/socketio_zhm",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/talkSDKDemo/PrefixHeader.pch";
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/talkSDKDemo/lib/libTKRoomSDK.framework";
 				INFOPLIST_FILE = talkSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -770,12 +769,11 @@
 					"$(PROJECT_DIR)/talkSDKDemo/lib",
 				);
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_BUNDLE_IDENTIFIER = ifeng.talkSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.talkcloud.edu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/talkSDKDemo/lib";
 			};
 			name = Release;
 		};

@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 //#import <TKRoomSDK/TKRoomSDK.h>
-#import <libTKRoomSDK/TKRoomSDK.h>
 @class VideoView;
 
 @interface VideosBlock : UIView
@@ -19,4 +18,5 @@
 - (void)playAudioWithUser:(TKRoomUser *)user;
 - (void)unPlayAudioWithUser:(NSString *)peerID;
 - (void)refreshForPublishState:(TKPublishState)state user:(NSString *)peerID;
+- (void)clean;
 @end

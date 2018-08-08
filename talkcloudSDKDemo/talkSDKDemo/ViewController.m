@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *roomId;
 @property (weak, nonatomic) IBOutlet UITextField *role;
 @property (weak, nonatomic) IBOutlet UITextField *password;
+@property (weak, nonatomic) IBOutlet UITextField *name;
 
 @end
 
@@ -22,7 +23,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    _autoSubscribe = YES; 
+    _autoSubscribe = YES;
+
+    NSString *str = [NSString stringWithFormat:@"%s", TKRoomSDKVersionString];
+    
 }
 
 - (void)viewDidLayoutSubviews {
@@ -53,6 +57,7 @@
 - (IBAction)onClickedStart:(UIButton *)sender {
 
     RoomController* pop = [[RoomController alloc] init];
+    
     pop.roomid = self.roomId.text;
     if (!pop.roomid || pop.roomid.length == 0) {
         return;
@@ -62,6 +67,7 @@
     if (!pop.role || pop.role.length == 0) {
         return;
     }
+    pop.name = self.name.text;
     pop.password = self.password.text;
     [self presentViewController:pop animated:YES completion:nil];
 }

@@ -14,7 +14,6 @@
 #import "ChatModel.h"
 #import "NSString+sizeHeight.h"
 //#import <TKRoomSDK/TKRoomSDK.h>
-#import <libTKRoomSDK/TKRoomSDK.h>
 
 #define INPUT_VIEW_HEIGHT 60 // 底部输入视图高度
 static NSString * const otherCellID = @"ChatMessageOtherCell";
@@ -198,16 +197,17 @@ static NSString * const meCellID = @"ChatMessageMeCell";
 }
 
 - (NSMutableArray *)dataSource {
-    
     if (!_dataSource) {
-        
         _dataSource = [NSMutableArray array];
     }
-    
     return _dataSource;
 }
 
-
+- (void)destory {
+    self.chatListTV.delegate = nil;
+    self.chatListTV.dataSource = nil;
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 
 - (void)dealloc {

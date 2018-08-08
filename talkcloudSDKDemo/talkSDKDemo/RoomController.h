@@ -13,4 +13,6 @@
 @property (copy, nonatomic) NSString *roomid;
 @property (copy, nonatomic) NSString *role;
 @property (copy, nonatomic) NSString *password;
+@property (copy, nonatomic) NSString *name;
+
 @end

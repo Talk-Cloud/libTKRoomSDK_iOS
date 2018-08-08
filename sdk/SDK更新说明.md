@@ -1,10 +1,32 @@
+#  SDK版本说明：
+        1、可以支持armv7、arm64、i386、x86_64等CPU架构；
+        2、支持iOS8.0及以上系统版本运行。
+
 #  SDK版本更新说明
+版本号：2.2.9
+时间：2018.08.30
+1、添加TKRoomManagerDelegate代理回调函数
+
+    1.1、添加播放视频时第一帧回调 
+    - (void)roomManagerOnFirstVideoFrameWithPeerID:(NSString *)peerID width:(NSInteger)width height:(NSInteger)height mediaType:(TKMediaType)type;
+    1.2、添加播放音频时第一帧回调
+    - (void)roomManagerOnFirstAudioFrameWithPeerID:(NSString *)peerID mediaType:(TKMediaType)type;
+    
+2、修改TKRoomManager接口函数
+
+        2.1、添加设置日志等级接口参数：
+         参数debug表示： debug模式：控制台打印，release模式：控制台不打印。
+        + (int)setLogLevel:(TKLogLevel)level logPath:(NSString * _Nullable)logPath debugToConsole:(BOOL)debug;
+        
+3、优化自动选择服务器 ，修复SDK bug，优化接口。
+
+
 版本号：2.2.8
 时间：2018.07.20
 
 1、修改TKRoomManager 接口函数
 
-    1.1、修改 - (int)setLogLevel:(TKLogLevel)level logPath:(NSString *)logPath;完善将日志写入沙盒功能。默认路径为：沙盒Documents/TKLog
+    1.1、修改 + (int)setLogLevel:(TKLogLevel)level logPath:(NSString *)logPath;完善将日志写入沙盒功能。默认路径为：沙盒Documents/TKLog
     1.2、添加 - (int)initWithAppKey:(NSString *)appKey optional:(NSDictionary * _Nullable)optional; 设置appID以及设置房间扩展信息。
     即将废弃 - (int)registerAppKey:(NSString *)appKey;接口。
 

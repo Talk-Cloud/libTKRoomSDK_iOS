@@ -16,5 +16,5 @@
 - (void)hide;
 
 - (void)receiveMessage:(NSString *)msg peerID:(NSString *)peerID;
-
+- (void)destory;
 @end

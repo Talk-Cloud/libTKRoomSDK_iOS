@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 //#import <TKRoomSDK/TKRoomSDK.h>
-#import <libTKRoomSDK/TKRoomSDK.h>
 
 
 typedef  NS_ENUM(NSInteger,TKPlayStatus) {

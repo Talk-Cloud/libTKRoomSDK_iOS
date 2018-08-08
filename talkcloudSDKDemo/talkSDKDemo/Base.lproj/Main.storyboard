@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -58,7 +58,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="638613753" borderStyle="roundedRect" placeholder="输入房间号" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="UQB-eg-mxS">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="402498801" borderStyle="roundedRect" placeholder="输入房间号" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="UQB-eg-mxS">
                                 <rect key="frame" x="100" y="196.5" width="225" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="seW-Ed-aDy"/>
@@ -86,31 +86,52 @@
                                     <action selector="onClickedStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HfA-dI-1bp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="域名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vuv-0G-nxA">
+                                <rect key="frame" x="50" y="146" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="global.talk-cloud.net" borderStyle="roundedRect" placeholder="输入所在地区域名" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="wSg-wF-Phk">
+                                <rect key="frame" x="100" y="132" width="225" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kQT-AE-S4F"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="MK2-Gp-8p7" secondAttribute="trailing" constant="50" id="07N-Mx-T9b"/>
                             <constraint firstItem="MK2-Gp-8p7" firstAttribute="leading" secondItem="vcj-nl-qCx" secondAttribute="trailing" constant="15" id="3a7-xU-PpY"/>
                             <constraint firstItem="s7w-0Q-Lfe" firstAttribute="trailing" secondItem="vcj-nl-qCx" secondAttribute="trailing" id="4Dw-6S-nOK"/>
+                            <constraint firstItem="wSg-wF-Phk" firstAttribute="leading" secondItem="Vuv-0G-nxA" secondAttribute="trailing" constant="15" id="5rh-IZ-apl"/>
                             <constraint firstItem="Nrg-U8-2ag" firstAttribute="top" secondItem="vcj-nl-qCx" secondAttribute="bottom" constant="43" id="Gvd-Hz-GNA"/>
                             <constraint firstItem="7nf-YV-U80" firstAttribute="centerY" secondItem="Nrg-U8-2ag" secondAttribute="centerY" id="HbT-iS-7BB"/>
                             <constraint firstItem="txn-Go-bIf" firstAttribute="width" secondItem="7nf-YV-U80" secondAttribute="width" multiplier="1/2" id="I0h-fO-WYf"/>
+                            <constraint firstAttribute="trailing" secondItem="wSg-wF-Phk" secondAttribute="trailing" constant="50" id="I0q-0B-y0D"/>
                             <constraint firstItem="txn-Go-bIf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jo1-Y7-F9X"/>
                             <constraint firstItem="txn-Go-bIf" firstAttribute="top" secondItem="7nf-YV-U80" secondAttribute="bottom" constant="67.5" id="Mcp-y8-BdT"/>
                             <constraint firstItem="UQB-eg-mxS" firstAttribute="centerY" secondItem="s7w-0Q-Lfe" secondAttribute="centerY" id="Qm6-Wp-Z6e"/>
+                            <constraint firstItem="s7w-0Q-Lfe" firstAttribute="top" secondItem="Vuv-0G-nxA" secondAttribute="bottom" constant="44" id="TTg-nd-UkJ"/>
                             <constraint firstItem="vcj-nl-qCx" firstAttribute="centerY" secondItem="MK2-Gp-8p7" secondAttribute="centerY" id="VYD-j2-vYb"/>
                             <constraint firstAttribute="trailing" secondItem="UQB-eg-mxS" secondAttribute="trailing" constant="50" id="Va7-GC-wmv"/>
                             <constraint firstAttribute="trailing" secondItem="7nf-YV-U80" secondAttribute="trailing" constant="50" id="WDX-nN-aBJ"/>
+                            <constraint firstItem="wSg-wF-Phk" firstAttribute="centerY" secondItem="Vuv-0G-nxA" secondAttribute="centerY" id="Xut-JB-Jz1"/>
                             <constraint firstItem="Nrg-U8-2ag" firstAttribute="trailing" secondItem="vcj-nl-qCx" secondAttribute="trailing" id="YfY-PI-wyA"/>
                             <constraint firstItem="MK2-Gp-8p7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="bK9-WV-tEn"/>
                             <constraint firstItem="7nf-YV-U80" firstAttribute="leading" secondItem="Nrg-U8-2ag" secondAttribute="trailing" constant="15" id="dcb-ub-v39"/>
                             <constraint firstItem="vcj-nl-qCx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="gNr-tw-z6d"/>
                             <constraint firstItem="vcj-nl-qCx" firstAttribute="top" secondItem="s7w-0Q-Lfe" secondAttribute="bottom" constant="41" id="nWg-7c-Tdp"/>
                             <constraint firstItem="UQB-eg-mxS" firstAttribute="leading" secondItem="s7w-0Q-Lfe" secondAttribute="trailing" constant="15" id="qa2-xB-hz4"/>
+                            <constraint firstItem="Vuv-0G-nxA" firstAttribute="trailing" secondItem="s7w-0Q-Lfe" secondAttribute="trailing" id="wnS-Fq-QJj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pd1-Jh-oTz"/>
                     <connections>
+                        <outlet property="name" destination="wSg-wF-Phk" id="liC-WG-iyo"/>
                         <outlet property="password" destination="7nf-YV-U80" id="5U2-4B-cuF"/>
                         <outlet property="role" destination="MK2-Gp-8p7" id="o32-e2-0bx"/>
                         <outlet property="roomId" destination="UQB-eg-mxS" id="B9G-GV-wmc"/>
@@ -118,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4410" y="-645"/>
+            <point key="canvasLocation" x="-6772" y="-1602"/>
         </scene>
     </scenes>
 </document>

@@ -11,7 +11,7 @@
 
 @interface VideoView()<UIGestureRecognizerDelegate>
 @property (nonatomic) BOOL isViewHidden;
-@property (nonatomic, strong) TKRoomManager *mgr;
+@property (nonatomic, weak) TKRoomManager *mgr;
 @property (strong, nonatomic)  UILabel *nameLabel;
 
 

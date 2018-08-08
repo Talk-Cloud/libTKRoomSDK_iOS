@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "libTKRoomSDK"
-  s.version      = "2.2.8"
+  s.version      = "2.2.9"
   s.summary      = "A static library for audio and video ."
 
   # This description is used to generate tags and improve search results.
@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "talk-cloud" => "tksdk@talk-cloud.com" }
+  s.author             = { "Talk-Cloud" => "tksdk@talk-cloud.com" }
   # Or just: s.author    = "talk-cloud"
   # s.authors            = { "talk-cloud" => "tksdk@talk-cloud.com" }
   # s.social_media_url   = "http://twitter.com/talk-cloud"
@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
 
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
-  s.vendored_frameworks = 'sdk/libs/TKRoomSDK.framework','sdk/libs/SocketIO.framework','sdk/libs/Starscream.framework'
+  s.vendored_frameworks = 'sdk/lib/libTKRoomSDK.framework','sdk/lib/SocketIO.framework','sdk/lib/Starscream.framework'
   # s.public_header_files = "Classes/**/*.h"
 
 

@@ -63,7 +63,10 @@
         if (videoView.status == TKPlay_Video || videoView.status == TKPlay_Both) {
             return;
         }
+//        CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
         [self.rmg playVideo:user.peerID renderType:TKRenderMode_adaptive window:videoView completion:^(NSError *error) {
+//            CFAbsoluteTime end = CFAbsoluteTimeGetCurrent();
+//            NSLog(@"CFAbsoluteTime %f", end - start);
             if (error) {
                 return ;
             }
@@ -252,5 +255,26 @@
         [self bringSubviewToFront:view];
     }
     
+}
+
+- (void)clean
+{
+    for (NSString *peerID in self.videos.allKeys) {
+        [_rmg unPlayVideo:peerID completion:^(NSError *error) {
+            VideoView *view = self.videos[peerID];
+            if (view) {
+                [view removeFromSuperview];
+                view = nil;
+            }
+        }];
+        [_rmg unPlayAudio:peerID completion:^(NSError *error) {
+            VideoView *view = self.videos[peerID];
+            if (view) {
+                [view removeFromSuperview];
+                view = nil;
+            } 
+        }];
+    }
+    [self.videos removeAllObjects];
 }
 @end
