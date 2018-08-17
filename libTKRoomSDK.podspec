@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
 
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
-  s.vendored_frameworks = 'sdk/lib/libTKRoomSDK.framework','sdk/lib/SocketIO.framework','sdk/lib/Starscream.framework'
+  s.vendored_frameworks = 'sdk/lib/libTKRoomSDK.framework' #,'sdk/lib/SocketIO.framework','sdk/lib/Starscream.framework'
   # s.public_header_files = "Classes/**/*.h"
 
 
@@ -132,6 +132,7 @@ Pod::Spec.new do |s|
    s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+
+   s.dependency "Socket.IO-Client-Swift", '~> 12.1.2'
 
 end
