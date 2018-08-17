@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
   s.name         = "libTKRoomSDK"
   s.version      = "2.2.9"
   s.summary      = "A static library for audio and video ."
-
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
@@ -135,6 +134,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
       'SWIFT_VERSION' => '4.0'
   }
+  s.swift_version = '4.0'
   s.xcconfig = { "ENABLE_BITCODE" => "NO" }
   s.dependency "Socket.IO-Client-Swift", '~> 12.1.2'
 
