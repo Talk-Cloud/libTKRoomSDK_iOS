@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
 
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
-  s.vendored_frameworks = 'sdk/lib/libTKRoomSDK.framework' ,'sdk/lib/SocketIO.framework','sdk/lib/Starscream.framework'
+  s.vendored_frameworks = 'sdk/libTKRoomSDK.framework' ,'sdk/SocketIO.framework','sdk/Starscream.framework'
   # s.public_header_files = "Classes/**/*.h"
 
 
