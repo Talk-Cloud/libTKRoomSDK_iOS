@@ -1,9 +1,0 @@
-platform :ios, '8.0'
-use_frameworks!
-
-target 'talkcloudSDKDemo' do
-    pod 'Socket.IO-Client-Swift', '~> 12.1.2'
-end
-
-
-

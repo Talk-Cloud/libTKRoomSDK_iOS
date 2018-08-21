@@ -322,10 +322,15 @@ typedef NS_ENUM(NSInteger, TKNetQuality) {
  房间文档服务器地址
  */
 @property (nonatomic, copy) NSString *ClassDocServerAddr;
+
 /**
  房间文档服务器备份地址
  */
 @property (nonatomic, strong) NSArray *ClassDocServerAddrBackup;
+/**
+ 房间web服务器地址
+ */
+@property (nonatomic, copy) NSString *currentWebAddr;
 /**
  当前连接的服务器
  */
@@ -444,7 +449,16 @@ typedef NS_ENUM(NSInteger, TKNetQuality) {
  自定义奖杯
  */
 @property (nonatomic, assign) BOOL customTrophyFlag;
- 
+
+/**
+ 巡课身份隐藏下课按钮
+ */
+@property (assign, nonatomic) BOOL hideClassEndBtn;
+
+/**
+ 课件全屏同步
+ */
+@property (assign, nonatomic) BOOL coursewareFullSynchronize;
 @end
 
 #

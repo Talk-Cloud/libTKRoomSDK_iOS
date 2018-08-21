@@ -11,6 +11,7 @@
 		5899BB2621070F77006F3B23 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5899BB2521070F77006F3B23 /* GLKit.framework */; };
 		5899BB2821070F7E006F3B23 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5899BB2721070F7E006F3B23 /* libc++.tbd */; };
 		58A0756020EF86C300658C1C /* VideosBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A0755F20EF86C300658C1C /* VideosBlock.m */; };
+		58BD785F212C102C003A8A27 /* libTKRoomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BD785E212C102C003A8A27 /* libTKRoomSDK.framework */; };
 		58C9D52E20FC8A64000376C1 /* TKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C9D52C20FC8A64000376C1 /* TKTableViewCell.m */; };
 		58C9D52F20FC8A64000376C1 /* TKTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C9D52D20FC8A64000376C1 /* TKTableViewCell.xib */; };
 		58FDDF9C211AAA1D003455D9 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FDDF9A211AAA1C003455D9 /* Starscream.framework */; };
@@ -23,7 +24,6 @@
 		5E2C934C1F023D26005D4300 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2C934A1F023D26005D4300 /* Main.storyboard */; };
 		5E2C93511F023D26005D4300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2C934F1F023D26005D4300 /* LaunchScreen.storyboard */; };
 		5E2C93761F023D5F005D4300 /* RoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C93751F023D5F005D4300 /* RoomController.m */; };
-		5E6F328C211AD2A5009691EB /* libTKRoomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6F328B211AD2A5009691EB /* libTKRoomSDK.framework */; };
 		683B1AA8207D1549008E2BEB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 683B1AAA207D1549008E2BEB /* Localizable.strings */; };
 		685826DE207E085100734E43 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 685826DC207E085100734E43 /* VideoView.m */; };
 		685826E1207E087D00734E43 /* TKVideoLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 685826E0207E087D00734E43 /* TKVideoLayerView.m */; };
@@ -87,6 +87,7 @@
 		5899BB2721070F7E006F3B23 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		58A0755E20EF86C300658C1C /* VideosBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideosBlock.h; sourceTree = "<group>"; };
 		58A0755F20EF86C300658C1C /* VideosBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideosBlock.m; sourceTree = "<group>"; };
+		58BD785E212C102C003A8A27 /* libTKRoomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libTKRoomSDK.framework; sourceTree = "<group>"; };
 		58C9D52B20FC8A64000376C1 /* TKTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTableViewCell.h; sourceTree = "<group>"; };
 		58C9D52C20FC8A64000376C1 /* TKTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTableViewCell.m; sourceTree = "<group>"; };
 		58C9D52D20FC8A64000376C1 /* TKTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKTableViewCell.xib; sourceTree = "<group>"; };
@@ -107,7 +108,6 @@
 		5E2C93751F023D5F005D4300 /* RoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomController.m; sourceTree = "<group>"; };
 		5E2C93801F023E45005D4300 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		5E2C93821F023E4E005D4300 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
-		5E6F328B211AD2A5009691EB /* libTKRoomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libTKRoomSDK.framework; sourceTree = "<group>"; };
 		683B1AA0207D1264008E2BEB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		683B1AA1207D1264008E2BEB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		683B1AA3207D1269008E2BEB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 				5899BB2821070F7E006F3B23 /* libc++.tbd in Frameworks */,
 				5899BB2621070F77006F3B23 /* GLKit.framework in Frameworks */,
 				58FDDF9D211AAA1D003455D9 /* SocketIO.framework in Frameworks */,
-				5E6F328C211AD2A5009691EB /* libTKRoomSDK.framework in Frameworks */,
+				58BD785F212C102C003A8A27 /* libTKRoomSDK.framework in Frameworks */,
 				58FDDF9C211AAA1D003455D9 /* Starscream.framework in Frameworks */,
 				5899BB2421070F70006F3B23 /* VideoToolbox.framework in Frameworks */,
 			);
@@ -201,7 +201,7 @@
 		587D8BFD21008D0E00C08F32 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				5E6F328B211AD2A5009691EB /* libTKRoomSDK.framework */,
+				58BD785E212C102C003A8A27 /* libTKRoomSDK.framework */,
 				58FDDF9B211AAA1C003455D9 /* SocketIO.framework */,
 				58FDDF9A211AAA1C003455D9 /* Starscream.framework */,
 			);
