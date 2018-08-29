@@ -7,17 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		586D06BD2135579200898B0A /* libTKRoomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586D06BC2135579200898B0A /* libTKRoomSDK.framework */; };
 		5899BB2421070F70006F3B23 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5899BB2321070F70006F3B23 /* VideoToolbox.framework */; };
 		5899BB2621070F77006F3B23 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5899BB2521070F77006F3B23 /* GLKit.framework */; };
 		5899BB2821070F7E006F3B23 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5899BB2721070F7E006F3B23 /* libc++.tbd */; };
 		58A0756020EF86C300658C1C /* VideosBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A0755F20EF86C300658C1C /* VideosBlock.m */; };
-		58BD785F212C102C003A8A27 /* libTKRoomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BD785E212C102C003A8A27 /* libTKRoomSDK.framework */; };
 		58C9D52E20FC8A64000376C1 /* TKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C9D52C20FC8A64000376C1 /* TKTableViewCell.m */; };
 		58C9D52F20FC8A64000376C1 /* TKTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C9D52D20FC8A64000376C1 /* TKTableViewCell.xib */; };
-		58FDDF9C211AAA1D003455D9 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FDDF9A211AAA1C003455D9 /* Starscream.framework */; };
-		58FDDF9D211AAA1D003455D9 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FDDF9B211AAA1C003455D9 /* SocketIO.framework */; };
-		58FDDF9E211AAA25003455D9 /* SocketIO.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 58FDDF9B211AAA1C003455D9 /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		58FDDF9F211AAA25003455D9 /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 58FDDF9A211AAA1C003455D9 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E2C93431F023D26005D4300 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C93421F023D26005D4300 /* main.m */; };
 		5E2C93461F023D26005D4300 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C93451F023D26005D4300 /* AppDelegate.m */; };
 		5E2C93491F023D26005D4300 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C93481F023D26005D4300 /* ViewController.m */; };
@@ -73,26 +69,22 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				58FDDF9E211AAA25003455D9 /* SocketIO.framework in CopyFiles */,
-				58FDDF9F211AAA25003455D9 /* Starscream.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		586D06BC2135579200898B0A /* libTKRoomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libTKRoomSDK.framework; sourceTree = "<group>"; };
 		587D8C812101DF8700C08F32 /* talkSDKDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = talkSDKDemo.entitlements; sourceTree = "<group>"; };
 		5899BB2321070F70006F3B23 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		5899BB2521070F77006F3B23 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		5899BB2721070F7E006F3B23 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		58A0755E20EF86C300658C1C /* VideosBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideosBlock.h; sourceTree = "<group>"; };
 		58A0755F20EF86C300658C1C /* VideosBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideosBlock.m; sourceTree = "<group>"; };
-		58BD785E212C102C003A8A27 /* libTKRoomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libTKRoomSDK.framework; sourceTree = "<group>"; };
 		58C9D52B20FC8A64000376C1 /* TKTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTableViewCell.h; sourceTree = "<group>"; };
 		58C9D52C20FC8A64000376C1 /* TKTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTableViewCell.m; sourceTree = "<group>"; };
 		58C9D52D20FC8A64000376C1 /* TKTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKTableViewCell.xib; sourceTree = "<group>"; };
-		58FDDF9A211AAA1C003455D9 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Starscream.framework; sourceTree = "<group>"; };
-		58FDDF9B211AAA1C003455D9 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SocketIO.framework; sourceTree = "<group>"; };
 		5E2C933E1F023D26005D4300 /* talkSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = talkSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2C93421F023D26005D4300 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E2C93441F023D26005D4300 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -174,10 +166,8 @@
 			files = (
 				5899BB2821070F7E006F3B23 /* libc++.tbd in Frameworks */,
 				5899BB2621070F77006F3B23 /* GLKit.framework in Frameworks */,
-				58FDDF9D211AAA1D003455D9 /* SocketIO.framework in Frameworks */,
-				58BD785F212C102C003A8A27 /* libTKRoomSDK.framework in Frameworks */,
-				58FDDF9C211AAA1D003455D9 /* Starscream.framework in Frameworks */,
 				5899BB2421070F70006F3B23 /* VideoToolbox.framework in Frameworks */,
+				586D06BD2135579200898B0A /* libTKRoomSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,9 +191,7 @@
 		587D8BFD21008D0E00C08F32 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				58BD785E212C102C003A8A27 /* libTKRoomSDK.framework */,
-				58FDDF9B211AAA1C003455D9 /* SocketIO.framework */,
-				58FDDF9A211AAA1C003455D9 /* Starscream.framework */,
+				586D06BC2135579200898B0A /* libTKRoomSDK.framework */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -734,7 +722,7 @@
 					"$(PROJECT_DIR)/talkSDKDemo/lib",
 				);
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_BUNDLE_IDENTIFIER = com.talkcloud.edu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.talkcloud.sdkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -769,7 +757,7 @@
 					"$(PROJECT_DIR)/talkSDKDemo/lib",
 				);
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_BUNDLE_IDENTIFIER = com.talkcloud.edu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.talkcloud.sdkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

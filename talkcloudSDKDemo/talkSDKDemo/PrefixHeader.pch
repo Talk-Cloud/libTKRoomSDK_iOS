@@ -19,6 +19,7 @@
 #ifdef StaticLibrary
 #import <libTKRoomSDK/TKRoomSDK.h>
 #else
-#import <libTKRoomSDK/TKRoomSDK.h>
+#import <TKRoomSDK/TKRoomSDK.h>
+
 #endif
 #endif /* PrefixHeader_pch */

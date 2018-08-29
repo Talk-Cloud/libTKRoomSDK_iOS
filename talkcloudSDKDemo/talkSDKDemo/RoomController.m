@@ -310,7 +310,7 @@ typedef void (^ButtonAction)(UIButton* button);
         TKVideoProfile *videoProfile = [TKVideoProfile new];
         videoProfile.width = 1920;
         videoProfile.height = 1080;
-        videoProfile.maxfps = 15;
+        videoProfile.maxfps = 30;
         [_roomMgr setVideoProfile:videoProfile];
     }];
     [_alert addAction:action6];
@@ -340,8 +340,12 @@ typedef void (^ButtonAction)(UIButton* button);
         self.name = @"global.talk-cloud.net";
     }
     [TKRoomManager setLogLevel:TKLog_Info logPath:nil debugToConsole:YES];
-    
-    [_roomMgr joinRoomWithHost:self.name port:80 nickName:@"ios" roomParams:@{@"serial":self.roomid,@"userrole":self.role, @"password" : password,@"autoSubscribeAV" : @(YES)} userParams:nil];
+    TKVideoProfile *profile = [TKVideoProfile new];
+    profile.width = 640;
+    profile.height = 480;
+    profile.maxfps = 10;
+    [_roomMgr setVideoProfile:profile];
+    [_roomMgr joinRoomWithHost:self.name port:80 nickName:nil roomParams:@{@"serial":self.roomid,@"userrole":self.role, @"password" : password,@"clientType":@(3), @"autoSubscribeAV" : @(YES)} userParams:nil];
     [_roomMgr setVideoOrientation:UIDeviceOrientationPortrait]; 
     
 }
@@ -671,13 +675,21 @@ typedef void (^ButtonAction)(UIButton* button);
         [self.showStats scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionBottom animated:YES];
     }
     
-    if (error.code == TKErrorCode_ConnectSocketError) {
-        if (!self.clean) {
-            [_videoBlock clean];
-        }
-        self.clean = YES;
-    }
+//    if (error.code == TKErrorCode_ConnectSocketError) {
+//        if (!self.clean) {
+//            [_videoBlock clean];
+//        }
+//        self.clean = YES;
+//    }
     
+}
+
+- (void)roomManagerOnConnectionLost
+{
+    if (!self.clean) {
+        [_videoBlock clean];
+    }
+    self.clean = YES;
 }
 
 - (void)roomManagerDidOccuredWaring:(TKRoomWarningCode)code
@@ -1085,42 +1097,42 @@ typedef void (^ButtonAction)(UIButton* button);
 - (void)roomManagerOnFirstAudioFrameWithPeerID:(NSString *)peerID mediaType:(TKMediaType)type
 {
     if ([peerID isEqualToString:_roomMgr.localUser.peerID]) {
-        NSLog(@"自己 OnFirstAudioFrame mediaType = %ld", type);
+//        NSLog(@"自己 OnFirstAudioFrame mediaType = %ld", type);
     } else {
-        NSLog(@"远端 OnFirstAudioFrame mediaType = %ld", type);
+//        NSLog(@"远端 OnFirstAudioFrame mediaType = %ld", type);
     }
 }
 
 - (void)roomManagerOnFirstVideoFrameWithPeerID:(NSString *)peerID width:(NSInteger)width height:(NSInteger)height mediaType:(TKMediaType)type
 {
     if ([peerID isEqualToString:_roomMgr.localUser.peerID]) {
-        NSLog(@"自己 OnFirstVideoFrame width = %ld height = %ld mediaType = %ld",width, height, type);
+//        NSLog(@"自己 OnFirstVideoFrame width = %ld height = %ld mediaType = %ld",width, height, type);
     } else {
 //        CFAbsoluteTime cur = CFAbsoluteTimeGetCurrent() - _start;
 //        NSLog(@"远端 OnFirstVideoFrame 渲染时间%f", cur);
-        NSLog(@"远端 OnFirstVideoFrame width = %ld height = %ld mediaType = %ld",width, height, type);
+//        NSLog(@"远端 OnFirstVideoFrame width = %ld height = %ld mediaType = %ld",width, height, type);
     }
 }
 #pragma mark - TKMediaFrameDelegate
 
 - (void)onCaptureAudioFrame:(TKAudioFrame *)frame sourceType:(TKMediaType)type
 {
-    NSLog(@"自己 onCaptureAudioFrame = %@", frame);
+//    NSLog(@"自己 onCaptureAudioFrame = %@", frame);
 }
 
 - (void)onCaptureVideoFrame:(TKVideoFrame *)frame sourceType:(TKMediaType)type
 {
-    NSLog(@"自己 onCaptureVideoFrame = %@", frame);
+//    NSLog(@"自己 onCaptureVideoFrame = %@", frame);
 }
 
 - (void)onRenderAudioFrame:(TKAudioFrame *)frame uid:(NSString *)peerId sourceType:(TKMediaType)type
 {
-    NSLog(@"peerId= %@, onRenderAudioFrame = %@",peerId, frame);
+//    NSLog(@"peerId= %@, onRenderAudioFrame = %@",peerId, frame);
 }
 
 - (void)onRenderVideoFrame:(TKVideoFrame *)frame uid:(NSString *)peerId sourceType:(TKMediaType)type
 {
-    NSLog(@"peerId= %@, onRenderVideoFrame = %@",peerId, frame);
+//    NSLog(@"peerId= %@, onRenderVideoFrame = %@",peerId, frame);
 }
 #pragma mark -
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
