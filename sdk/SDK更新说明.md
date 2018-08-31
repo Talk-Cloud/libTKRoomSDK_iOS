@@ -4,9 +4,17 @@
         3、Installation with CocoaPods
             Podfile
             platform:ios,'8.0'
-            pod 'libTKRoomSDK', '~> 2.2.11'
-
+            pod 'libTKRoomSDK', '~> 2.2.12'
 #  SDK版本更新说明
+
+时间：2018.08.31
+版本号：2.2.12
+
+1、优化播放媒体共享网络链路
+2、优化兼容32位机型设备
+3、优化接口文件
+
+
 时间：2018.08.27
 版本号：2.2.11
 
