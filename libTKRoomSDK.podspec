@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "libTKRoomSDK"
-  s.version      = "2.2.12"
+  s.version      = "3.0.1"
   s.summary      = "A static library for audio and video ."
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
 
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
-  s.vendored_frameworks = 'sdk/lib/libTKRoomSDK.framework' #,'sdk/SocketIO.framework','sdk/Starscream.framework'
+  s.vendored_frameworks = 'libsdk/iphoneos(真机)/libTKRoomSDK.framework' #,'sdk/SocketIO.framework','sdk/Starscream.framework'
   # s.public_header_files = "Classes/**/*.h"
 
 
@@ -131,11 +131,11 @@ Pod::Spec.new do |s|
    s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.pod_target_xcconfig = {
-      'SWIFT_VERSION' => '4.0'
-  }
-  s.swift_version = '4.0'
-  s.xcconfig = { "ENABLE_BITCODE" => "NO" }
+  # s.pod_target_xcconfig = {
+  #     'SWIFT_VERSION' => '4.0'
+  # }
+  # s.swift_version = '4.0'
+  # s.xcconfig = { "ENABLE_BITCODE" => "NO" }
   # s.dependency "Socket.IO-Client-Swift", '~> 12.1.2'
 
 end
