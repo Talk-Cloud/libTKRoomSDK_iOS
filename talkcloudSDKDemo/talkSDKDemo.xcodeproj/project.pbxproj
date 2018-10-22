@@ -15,6 +15,7 @@
 		58C0954F21788991007FD67E /* 32k.wav in Resources */ = {isa = PBXBuildFile; fileRef = 58C0954E21788990007FD67E /* 32k.wav */; };
 		58C9D52E20FC8A64000376C1 /* TKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C9D52C20FC8A64000376C1 /* TKTableViewCell.m */; };
 		58C9D52F20FC8A64000376C1 /* TKTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C9D52D20FC8A64000376C1 /* TKTableViewCell.xib */; };
+		58E6E681217DE02600E1C332 /* libTKRoomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E6E680217DE02600E1C332 /* libTKRoomSDK.framework */; };
 		5E2C93431F023D26005D4300 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C93421F023D26005D4300 /* main.m */; };
 		5E2C93461F023D26005D4300 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C93451F023D26005D4300 /* AppDelegate.m */; };
 		5E2C93491F023D26005D4300 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C93481F023D26005D4300 /* ViewController.m */; };
@@ -88,6 +89,7 @@
 		58C9D52B20FC8A64000376C1 /* TKTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTableViewCell.h; sourceTree = "<group>"; };
 		58C9D52C20FC8A64000376C1 /* TKTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTableViewCell.m; sourceTree = "<group>"; };
 		58C9D52D20FC8A64000376C1 /* TKTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKTableViewCell.xib; sourceTree = "<group>"; };
+		58E6E680217DE02600E1C332 /* libTKRoomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libTKRoomSDK.framework; sourceTree = "<group>"; };
 		5E2C933E1F023D26005D4300 /* talkSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = talkSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2C93421F023D26005D4300 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E2C93441F023D26005D4300 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				5899BB2821070F7E006F3B23 /* libc++.tbd in Frameworks */,
 				5899BB2621070F77006F3B23 /* GLKit.framework in Frameworks */,
 				5899BB2421070F70006F3B23 /* VideoToolbox.framework in Frameworks */,
+				58E6E681217DE02600E1C332 /* libTKRoomSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +196,7 @@
 		587D8BFD21008D0E00C08F32 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				58E6E680217DE02600E1C332 /* libTKRoomSDK.framework */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -719,7 +723,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/talkSDKDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = talkSDKDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -753,7 +757,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/talkSDKDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = talkSDKDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
